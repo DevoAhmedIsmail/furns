@@ -1,0 +1,8 @@
+.nav-icon {
+    cursor: pointer;
+    transition: color 0.3s;
+    &:hover {
+        color: var(--main-color);
+
+    }
+}
