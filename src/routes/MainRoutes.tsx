@@ -1,11 +1,11 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import Home from "../pages/Home/Home";
-import Navbar from "../components/shared/Navbar/Navbar";
+import Header from "../components/shared/Header/Header";
 
 export default function MainRoutes() {
   return (
     <div className="">
-        <Navbar />
+        <Header />
         <div className="">
           <Routes>
             <Route path="/*" element={<Navigate to={"/"} />} />
