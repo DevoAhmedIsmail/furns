@@ -15,6 +15,8 @@ import chair1Img from "../../../../../assets/images/products/chair.webp";
 import chair2Img from "../../../../../assets/images/products/chair-2.webp";
 import sofaImg from "../../../../../assets/images/products/sofa.webp";
 import CartItemSidebar from "./CartItemSidebar";
+import { Button } from "../../../../ui/button";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const checkoutData = {
@@ -105,6 +107,17 @@ const Cart = () => {
                   <p className="flex-1">Total</p>
                   <p className="text-mainColor">${checkoutData.total}</p>
                 </div>
+
+                <div className="flex flex-col gap-3 mt-6">
+                  <Button className="py-6 bg-[#212121] hover:bg-mainColor" asChild>
+                    <Link to="/cart">View Cart</Link>
+                  </Button>
+                  <Button className="py-6 bg-mainColor hover:bg-mainColor" asChild>
+                    <Link to="/cart/checkout">Checkout</Link>
+                  </Button>
+                </div>
+
+                <p className="mt-4 p-regular-16">Free Shipping on All Orders Over $100!</p>
               </div>
             </div>
           </SheetHeader>
