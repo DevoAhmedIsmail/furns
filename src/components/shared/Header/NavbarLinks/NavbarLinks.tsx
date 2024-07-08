@@ -39,7 +39,9 @@ const NavbarLinks = () => {
                     <DropdownMenuGroup>
                       {navLink.subLinks.map((subLink, index) => (
                         <DropdownMenuItem key={index}>
-                          <span>{subLink.title}</span>
+                          <Link to={subLink.link} className="w-full">
+                            <span>{subLink.title}</span>
+                          </Link>
                         </DropdownMenuItem>
                       ))}
                     </DropdownMenuGroup>
