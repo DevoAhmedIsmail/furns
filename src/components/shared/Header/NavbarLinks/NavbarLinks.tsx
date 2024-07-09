@@ -17,7 +17,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const NavbarLinks = () => {
   return (
-    <div className="text-white bg-mainBlack">
+    <div className="hidden text-white bg-mainBlack md:block">
       <div className="wrapper">
         <div className="gap-10 flex-center">
           {NavLinksData.map((navLink, index) => (
