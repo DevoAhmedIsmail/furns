@@ -14,17 +14,18 @@ import {
 } from "../../../ui/dropdown-menu";
 
 import { IoIosArrowDown } from "react-icons/io";
-
+import { t } from "i18next";
+console.log(NavLinksData);
 const NavbarLinks = () => {
   return (
     <div className="hidden text-white bg-mainBlack md:block">
       <div className="wrapper">
         <div className="gap-10 flex-center">
           {NavLinksData.map((navLink, index) => (
-            <DropdownMenu key={index}>
+            <DropdownMenu key={`Navbar-${index}`} dir={t("lang") === "ar" ? "rtl" : "ltr"}>
               <DropdownMenuTrigger>
                 <div className="flex items-center gap-1">
-                  {navLink.title}
+                  {t(navLink.title)}
                   {
                     navLink.subLinks && (
                       <IoIosArrowDown />
@@ -37,10 +38,10 @@ const NavbarLinks = () => {
                   {navLink.subLinks &&
                   !navLink?.subLinks[0]?.subLinksChildren ? (
                     <DropdownMenuGroup>
-                      {navLink.subLinks.map((subLink, index) => (
-                        <DropdownMenuItem key={index}>
+                      {navLink.subLinks.map((subLink, i) => (
+                        <DropdownMenuItem key={`menuItem-${i}`}>
                           <Link to={subLink.link} className="w-full">
-                            <span>{subLink.title}</span>
+                            <span>{t(subLink.title)}</span>
                           </Link>
                         </DropdownMenuItem>
                       ))}
@@ -48,19 +49,19 @@ const NavbarLinks = () => {
                   ) : (
                     <DropdownMenuGroup>
                       {navLink?.subLinks?.map((subLink, index) => (
-                        <DropdownMenuSub key={index}>
+                        <DropdownMenuSub key={`menugroup-${index}`}>
                           <DropdownMenuSubTrigger>
                             <Link to={subLink.link} className="w-full">
-                              <span>{subLink.title}</span>
+                              <span>{t(subLink.title)}</span>
                             </Link>
                           </DropdownMenuSubTrigger>
                           <DropdownMenuPortal>
                             <DropdownMenuSubContent>
                               {subLink?.subLinksChildren?.map(
-                                (subLinkChild, index) => (
-                                  <DropdownMenuItem key={index} asChild>
+                                (subLinkChild, i) => (
+                                  <DropdownMenuItem key={`drop-${i}`} asChild >
                                     <Link to={subLinkChild.link} className="cursor-pointer">
-                                      <span>{subLinkChild.title}</span>
+                                      <span>{t(subLinkChild.title)}</span>
                                     </Link>
                                   </DropdownMenuItem>
                                 )

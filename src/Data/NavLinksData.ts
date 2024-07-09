@@ -4,59 +4,59 @@ import { TNavLink } from "../types";
 
 const NavLinksData: TNavLink[] = [
   {
-    title: "Home",
+    title: "home",
     link: "/",
   },
   {
-    title: "About Us",
+    title: "about-us",
     link: "/about-us",
     subLinks: [
       {
-        title: "Privacy Policy",
+        title: "privacy-policy",
         link: "/privacy-policy",
       },
       {
-        title: "Faq",
+        title: "faq",
         link: "/faq",
       },
     ],
   },
   {
-    title: "Shop",
+    title:"shop",
     link: "/shop",
     subLinks: [
       {
-        title: "Chairs",
+        title:"chairs",
         link: "/shop/chairs",
       },
       {
-        title: "Sofas",
+        title:"sofas",
         link: "/shop/sofas",
       },
       {
-        title: "Tables",
+        title:"tables",
         link: "/shop/tables",
       },
       {
-        title: "Accessories",
+        title:"accessories",
         link: "/shop/accessories",
       },
     ],
   },
   {
-    title: "Media",
+    title: "media",
     link: "/media",
     subLinks: [
       {
-        title: "Blogs",
+        title: "blogs",
         link: "/media/blogs",
         subLinksChildren: [
           {
-            title: "Offers",
+            title: "offers",
             link: "/media/blogs?category=offers",
           },
           {
-            title: "Recommended",
+            title: "recommended",
             link: "/media/blogs?category=recommended",
           },
         ]
@@ -64,7 +64,7 @@ const NavLinksData: TNavLink[] = [
     ],
   },
   {
-    title: "Contact",
+    title: "contact",
     link: "/contact",
   },
 ];
