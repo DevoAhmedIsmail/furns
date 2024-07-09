@@ -25,12 +25,12 @@ const HeroSection = () => {
         >
         {HomeSliderData.map((slide, index) => (
             <SwiperSlide key={index}>
-            <HeroSlide
-                description={slide.description}
-                img={slide.img}
-                label={slide.label}
-                title={slide.title}
-            />
+              <HeroSlide
+                  description={slide.description}
+                  img={slide.img}
+                  label={slide.label}
+                  title={slide.title}
+              />
             </SwiperSlide>
         ))}
         </Swiper>
