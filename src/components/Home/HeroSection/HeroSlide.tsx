@@ -10,7 +10,7 @@ type THeroSliderProps = {
 
 const HeroSlide = ({title, description, img, label}: THeroSliderProps) => {
   return (
-    <div className="h-screen  bg-[#e7e7e7] pb-8">
+    <div className="md:h-[80vh]  bg-[#e7e7e7] pb-8">
         <div className="flex items-center justify-center h-full wrapper">
             <div className="flex flex-col items-center justify-center gap-5 text-center md:text-start md:flex-row ">
                 <div className="flex-1">

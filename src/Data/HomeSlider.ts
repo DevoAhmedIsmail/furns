@@ -1,4 +1,3 @@
-import { t } from "i18next";
 import sliderImage1 from "../assets/images/products/slider-1.webp"; 
 import sliderImage2 from "../assets/images/products/slider-2.webp"; 
 
