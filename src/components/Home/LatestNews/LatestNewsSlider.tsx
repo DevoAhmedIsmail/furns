@@ -8,10 +8,9 @@ import BlogCard from "../../shared/BlogCard/BlogCard";
 const LatestNewsSlider = () => {
   return (
     <div className="py-8">
-      <div className="wrapper">
         <Swiper
           modules={[Autoplay]}
-          spaceBetween={20}
+          // spaceBetween={20}
           slidesPerView={3}
           loop={true}
           autoplay={{ delay: 2000 }}
@@ -40,7 +39,6 @@ const LatestNewsSlider = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
     </div>
   );
 };

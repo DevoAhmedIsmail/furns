@@ -12,12 +12,12 @@ type TBlogCardProps = {
 }
 const BlogCard = ({img,link,title, date,description}: TBlogCardProps) => {
   return (
-    <div className="w-full">
+    <div className="w-full px-2 min-[630px]:px-3">
       <Link to={link} className="h-[300px] min-[630px]:h-[420px] w-full">
         <img src={img} alt={title} className="object-cover size-full" />
       </Link>
 
-      <div className="flex flex-col gap-3 mt-4">
+      <div className="flex flex-col gap-3 px-2 mt-4">
         <p className="text-mainColor p-medium-18">{t(date)}</p>
         <p className="p-medium-24 line-clamp-1">{t(title)}</p>
         <p className="line-clamp-3">{t(description)}</p>
