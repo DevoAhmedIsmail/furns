@@ -3,7 +3,7 @@ import ChangeLanguageDropdown from "./ChangeLanguageDropdown/ChangeLanguageDropd
 
 const SettingsBar = () => {
   return (
-    <div className='text-white bg-mainBlack'>
+    <div className='text-white bg-mainBlack p-medium-14 sm:p-regular-18'>
       <div className="wrapper">
         <div className="flex-between">
           <h1 className="text-mainColor">{t("welcome-msg")}</h1>
