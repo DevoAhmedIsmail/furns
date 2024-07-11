@@ -1,0 +1,51 @@
+.insta-card {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0, rgba(0, 0, 0, 0.85)),
+      to(rgba(255, 255, 255, 0))
+    );
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.85) 0,
+      rgba(255, 255, 255, 0) 100%
+    );
+    z-index: 2;
+    opacity: 0.45;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+
+  .icon {
+    // content: "";
+    content: "";
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    z-index: 3;
+    position: absolute;
+    -webkit-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    opacity: 0;
+    visibility: hidden;
+    margin-left: -12px;
+    margin-top: -12px;
+  }
+
+    &:hover .icon {
+        opacity: 1;
+        visibility: visible;
+    }
+}
