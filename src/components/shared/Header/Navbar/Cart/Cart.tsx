@@ -90,34 +90,34 @@ const Cart = () => {
                 />
               ))}
 
-              <div className="flex flex-col gap-2 py-5 p-regular-20">
-                <div className="text-[22px] flex items-center">
-                  <p className="flex-1">Sub-total</p>
+              <div className="flex flex-col gap-2 py-5 p-regular-20 text-start">
+                <div className="flex items-center">
+                  <p className="flex-1">{t("Sub-total")}</p>
                   <p>${checkoutData.subTotal}</p>
                 </div>
-                <div className="text-[22px] flex items-center">
-                  <p className="flex-1">Vat(20%)</p>
+                <div className="flex items-center">
+                  <p className="flex-1">{t("vat")}(20%)</p>
                   <p>${checkoutData.vat}</p>
                 </div>
-                <div className="text-[22px] flex items-center">
-                  <p className="flex-1">Shipping</p>
+                <div className="flex items-center">
+                  <p className="flex-1">{t("shipping")}</p>
                   <p>${checkoutData.shipping}</p>
                 </div>
-                <div className="text-[22px] flex items-center">
-                  <p className="flex-1">Total</p>
+                <div className="flex items-center">
+                  <p className="flex-1">{t("total")}</p>
                   <p className="text-mainColor">${checkoutData.total}</p>
                 </div>
 
                 <div className="flex flex-col gap-3 mt-6">
                   <Button className="py-6 bg-[#212121] hover:bg-mainColor" asChild>
-                    <Link to="/cart">View Cart</Link>
+                    <Link to="/cart">{t("view-cart")}</Link>
                   </Button>
                   <Button className="py-6 bg-mainColor hover:bg-mainColor" asChild>
-                    <Link to="/cart/checkout">Checkout</Link>
+                    <Link to="/cart/checkout">{t("checkout")}</Link>
                   </Button>
                 </div>
 
-                <p className="mt-4 p-regular-16">Free Shipping on All Orders Over $100!</p>
+                <p className="mt-4 text-center p-regular-16">{t("free-shipping-under-100")}</p>
               </div>
             </div>
           </SheetHeader>
