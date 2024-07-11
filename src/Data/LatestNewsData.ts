@@ -5,34 +5,30 @@ import blogImg04 from "../assets/images/blogs/4.webp";
 
 const LatestNewsData = [
   {
-    title: "Spatialize with that the furns Unique products will impress.",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    date: "14 November",
+    title: "blog-title-1",
+    description: "blog-description-1",
+    date: "14-nov",
     id: 12314,
     img: blogImg01,
   },
   {
-    title: "Unique products will impress.",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    date: "14 November",
+    title: "blog-title-2",
+    description: "blog-description-2",
+    date: "14-nov",
     id: 132523,
     img: blogImg02,
   },
   {
-    title: "The best way to get the best.",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    date: "14 November",
+    title: "blog-title-3",
+    description: "blog-description-2",
+    date: "14-nov",
     id: 5123,
     img: blogImg03,
   },
   {
-    title: "The best way to get the best The best way to get the best.",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    date: "14 November",
+    title: "blog-title-4",
+    description: "blog-description-1",
+    date: "14-nov",
     id: 6101,
     img: blogImg04,
   },

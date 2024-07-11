@@ -1,3 +1,5 @@
+import { t } from "i18next";
+
 type IBadgeProps = {
   discount?: number | string;
   isNew?: boolean;
@@ -13,7 +15,7 @@ const Badge = ({ discount, isNew }: IBadgeProps) => {
       )}
       {isNew && (
         <span className="px-2 py-1 text-sm text-white bg-green-700 rounded-md">
-          New
+          {t("new")}
         </span>
       )}
     </div>

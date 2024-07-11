@@ -5,6 +5,7 @@ import ProductIcon from "./ProductIcon";
 import { Button } from "../../ui/button";
 
 import "./ProductCard.scss"
+import { t } from "i18next";
 
 type IProductCardProps = {
   img: string;
@@ -41,7 +42,7 @@ const ProductCard = ({
 
         {/* Add To Cart */}
         <div className="absolute hidden w-full px-5 add-cart-btn bottom-5 flex-center">
-          <Button className="w-full text-black bg-white hover:text-mainColor hover:bg-white">Add To Cart</Button>
+          <Button className="w-full text-black bg-white hover:text-mainColor hover:bg-white">{t("add-to-cart")}</Button>
         </div>
       </div>
 

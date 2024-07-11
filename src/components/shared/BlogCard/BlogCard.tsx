@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import { Button } from "../../ui/button"
+import { t } from "i18next"
 
 type TBlogCardProps = {
   img: string,
@@ -17,10 +18,10 @@ const BlogCard = ({img,link,title, date,description}: TBlogCardProps) => {
       </Link>
 
       <div className="flex flex-col gap-3 mt-4">
-        <p className="text-mainColor p-medium-18">{date}</p>
-        <p className="p-medium-24 line-clamp-1">{title}</p>
-        <p className="line-clamp-3">{description}</p>
-        <Button className="bg-[#4d4d4d] text-white hover:bg-[#4d4d4d] hover:text-white w-[130px] h-[45px] rounded-[3px] mt-3">Read More</Button>
+        <p className="text-mainColor p-medium-18">{t(date)}</p>
+        <p className="p-medium-24 line-clamp-1">{t(title)}</p>
+        <p className="line-clamp-3">{t(description)}</p>
+        <Button className="bg-[#4d4d4d] text-white hover:bg-[#4d4d4d] hover:text-white w-[130px] h-[45px] rounded-[3px] mt-3">{t("read-more")}</Button>
       </div>
 
     </div>
