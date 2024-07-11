@@ -14,7 +14,7 @@ const ProductsTabs = () => {
 
   return (
     <div className="my-8">
-      <div className="flex-wrap gap-8 flex-center">
+      <div className="flex-wrap gap-y-4 gap-x-8 flex-center">
         {(Object.keys(ProductsLabel) as ProductsLabelKey[]).map((key) => {
           return (
             <p
