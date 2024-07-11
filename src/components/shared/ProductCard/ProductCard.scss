@@ -1,0 +1,11 @@
+.product-card {
+  .add-cart-btn {
+    transform: translateY(150%);
+    transition: transform 0.3s;
+  }
+  &:hover {
+    .add-cart-btn {
+      transform: translateY(0);
+    }
+  }
+}
