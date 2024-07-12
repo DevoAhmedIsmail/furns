@@ -1,0 +1,17 @@
+.footer-links-container {
+    a {
+        transition: all 0.3s;
+        &:hover {
+            color: var(--main-color);
+            padding-inline-start: 5px;
+        }
+    }
+
+    .social-links {
+       a {
+        &:hover {
+            padding-inline-start: 0;
+        }
+       }
+    }
+}
