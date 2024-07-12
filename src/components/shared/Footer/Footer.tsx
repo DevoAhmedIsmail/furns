@@ -9,6 +9,7 @@ import { FiLinkedin } from "react-icons/fi";
 import { FiYoutube } from "react-icons/fi";
 
 import "./Footer.scss";
+import { t } from "i18next";
 
 const Footer = () => {
   return (
@@ -17,11 +18,9 @@ const Footer = () => {
         <div className="grid grid-cols-12 gap-y-12 footer-links-container">
           {/* Row 1 */}
           <div className="col-span-12 px-3 sm:col-span-6 xl:col-span-4">
-            <p className="mb-4 tracking-wider p-medium-16">ABOUT US</p>
+            <p className="mb-4 tracking-wider uppercase p-medium-16">{t("about-us")}</p>
             <p className="p-regular-14 leading-[24px] max-w-[290px]">
-              Lorem ipsum dolor sit amet cons adipisicing elit sed do eiusm
-              tempor incididunt ut labor et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud
+              {t("product-desc")}
             </p>
 
             <div className="flex items-center gap-4 mt-4 social-links">
@@ -42,60 +41,60 @@ const Footer = () => {
 
           {/* Row 2 */}
           <div className="col-span-12 px-3 sm:col-span-6 xl:col-span-3">
-            <p className="mb-4 tracking-wider p-medium-16">INFORMATION</p>
+            <p className="mb-4 tracking-wider p-medium-16">{t("information")}</p>
             <ul className="space-y-2">
               <li>
-                <Link to="/">About Us</Link>
+                <Link to="/">{t("about-us")}</Link>
               </li>
               <li>
-                <Link to="/">Delivery Information</Link>
+                <Link to="/">{t("delivery-info")}</Link>
               </li>
               <li>
-                <Link to="/">Privacy & Policy</Link>
+                <Link to="/">{t("privacy-and-policy")}</Link>
               </li>
               <li>
-                <Link to="/">Terms & Condition</Link>
+                <Link to="/">{t("terms-and-condition")}</Link>
               </li>
               <li>
-                <Link to="/">Manufactures</Link>
+                <Link to="/">{t("manufactures")}</Link>
               </li>
             </ul>
           </div>
 
           {/* Row 3 */}
           <div className="col-span-12 px-3 sm:col-span-6 xl:col-span-2">
-            <p className="mb-4 tracking-wider p-medium-16">MY ACCOUNT</p>
+            <p className="mb-4 tracking-wider p-medium-16">{t("my-account")}</p>
             <ul className="space-y-2">
               <li>
-                <Link to="/">My Account</Link>
+                <Link to="/">{t("my-account")}</Link>
               </li>
               <li>
-                <Link to="/">My Cart</Link>
+                <Link to="/">{t("my-cart")}</Link>
               </li>
               <li>
-                <Link to="/">Login</Link>
+                <Link to="/">{t("login")}</Link>
               </li>
               <li>
-                <Link to="/">Wishlist</Link>
+                <Link to="/">{t("wishlist")}</Link>
               </li>
               <li>
-                <Link to="/">Checkout</Link>
+                <Link to="/">{t("checkout")}</Link>
               </li>
             </ul>
           </div>
 
           {/* Row 4 */}
           <div className="col-span-12 px-3 sm:col-span-6 xl:col-span-3">
-            <p className="mb-4 tracking-wider p-medium-16">NEWSLETTER</p>
+            <p className="mb-4 tracking-wider p-medium-16">{t("newsletter")}</p>
 
             <Input
               className="w-full bg-transparent border placeholder:text-white border-slate-50/50 h-[50px] rounded-sm"
-              placeholder="Your Mail*"
+              placeholder={`${t("your-mail")}*`}
             />
 
             <Button className="bg-mainColor h-[50px] mt-4 rounded-sm w-[150px]">
               <IoIosSend className="text-white me-2" size={22} />
-              Send Mail
+              {t("send-mail")}
             </Button>
           </div>
         </div>
@@ -104,7 +103,7 @@ const Footer = () => {
       {/* CopyWrite */}
       <div className="py-5 mt-5 bg-black">
         <div className="wrapper">
-          <p className="text-center">&copy; 2024 Furns Made By <span className="text-mainColor p-medium-16">Ahmed Ismail</span>.</p>
+          <p className="text-center">&copy; 2024 {t("furns-made-by")} <span className="text-mainColor p-medium-16">{t("ahmed-ismail")}</span>.</p>
         </div>
       </div>
     </footer>
