@@ -9,17 +9,7 @@ const NavLinksData: TNavLink[] = [
   },
   {
     title: "about-us",
-    link: "/about-us",
-    subLinks: [
-      {
-        title: "privacy-policy",
-        link: "/privacy-policy",
-      },
-      {
-        title: "faq",
-        link: "/faq",
-      },
-    ],
+    link: "/about-us"
   },
   {
     title:"shop",
@@ -60,6 +50,20 @@ const NavLinksData: TNavLink[] = [
             link: "/media/blogs?category=recommended",
           },
         ]
+      },
+    ],
+  },
+  {
+    title: "privacy & policy",
+    link: "/media",
+    subLinks: [
+      {
+        title: "privacy & policy",
+        link: "/privacy-policy",
+      },
+      {
+        title: "faq",
+        link: "/faq",
       },
     ],
   },
