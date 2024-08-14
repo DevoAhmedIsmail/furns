@@ -22,17 +22,26 @@ const NavbarLinks = () => {
       <div className="wrapper">
         <div className="gap-10 flex-center">
           {NavLinksData.map((navLink, index) => (
-            <DropdownMenu key={`Navbar-${index}`} dir={t("lang") === "ar" ? "rtl" : "ltr"}>
-              <DropdownMenuTrigger>
-                <div className="flex items-center gap-1">
-                  {t(navLink.title)}
-                  {
-                    navLink.subLinks && (
-                      <IoIosArrowDown />
-                    )
-                  }
-                </div>
-              </DropdownMenuTrigger>
+            <DropdownMenu
+              key={`Navbar-${index}`}
+              dir={t("lang") === "ar" ? "rtl" : "ltr"}
+            >
+              {navLink.subLinks ? (
+                <DropdownMenuTrigger>
+                  <div className="flex items-center gap-1">
+                    {t(navLink.title)}
+                    {navLink.subLinks && <IoIosArrowDown />}
+                  </div>
+                </DropdownMenuTrigger>
+              ) : (
+                <DropdownMenuTrigger>
+                  <Link to={navLink.link} className="flex items-center gap-1">
+                    {t(navLink.title)}
+                    {navLink.subLinks && <IoIosArrowDown />}
+                  </Link>
+                </DropdownMenuTrigger>
+              )}
+
               {navLink.subLinks && (
                 <DropdownMenuContent className="w-56">
                   {navLink.subLinks &&
@@ -59,8 +68,11 @@ const NavbarLinks = () => {
                             <DropdownMenuSubContent>
                               {subLink?.subLinksChildren?.map(
                                 (subLinkChild, i) => (
-                                  <DropdownMenuItem key={`drop-${i}`} asChild >
-                                    <Link to={subLinkChild.link} className="cursor-pointer">
+                                  <DropdownMenuItem key={`drop-${i}`} asChild>
+                                    <Link
+                                      to={subLinkChild.link}
+                                      className="cursor-pointer"
+                                    >
                                       <span>{t(subLinkChild.title)}</span>
                                     </Link>
                                   </DropdownMenuItem>
