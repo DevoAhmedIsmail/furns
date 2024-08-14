@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import Home from "../pages/Home/Home";
 import Header from "../components/shared/Header/Header";
 import Footer from "../components/shared/Footer/Footer";
+import Aboutus from "../pages/Aboutus/Aboutus";
 
 export default function MainRoutes() {
   return (
@@ -11,6 +12,7 @@ export default function MainRoutes() {
           <Routes>
             <Route path="/*" element={<Navigate to={"/"} />} />
             <Route path="/" element={<Home />} />
+            <Route path="/about-us" element={<Aboutus />} />
           </Routes>
         </div>
         <Footer />
