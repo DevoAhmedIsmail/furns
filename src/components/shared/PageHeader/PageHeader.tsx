@@ -16,7 +16,7 @@ const PageHeader = ({ title, links }: PageHeaderProps) => {
   return (
     <div className="bg-[#f4f5f7] py-12">
       <div className="wrapper">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col items-center justify-between gap-3 sm:flex-row sm:gap-0">
           <p className="text-[32px] font-semibold uppercase">{title}</p>
           <div className="">
             <Breadcrumb>
