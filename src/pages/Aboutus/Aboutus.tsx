@@ -1,3 +1,4 @@
+import WelcomeSection from "../../components/AboutUs/WelcomeSection/WelcomeSection"
 import PageHeader from "../../components/shared/PageHeader/PageHeader"
 
 const Aboutus = () => {
@@ -7,6 +8,8 @@ const Aboutus = () => {
         title="About Us"
         links={[{ name: "Home", url: "/" }, { name: "About Us" }]}
       />
+
+      <WelcomeSection />
     </div>
   )
 }
