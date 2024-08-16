@@ -1,3 +1,4 @@
+import FunctionalitySection from "../../components/AboutUs/FunctionalitySection/FunctionalitySection"
 import WelcomeSection from "../../components/AboutUs/WelcomeSection/WelcomeSection"
 import PageHeader from "../../components/shared/PageHeader/PageHeader"
 
@@ -10,6 +11,10 @@ const Aboutus = () => {
       />
 
       <WelcomeSection />
+
+      <FunctionalitySection  />
+
+
     </div>
   )
 }

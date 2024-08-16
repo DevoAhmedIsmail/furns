@@ -1,0 +1,17 @@
+.progressbar {
+    height: 7px;
+    width: 100%;
+    background-color: #ebebeb;
+    border-radius: 0px;
+    margin-top: 5px;
+    margin-bottom: 35px;
+    position: relative;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, .1);
+
+    .percent {
+        background-color: rgb(255, 112, 4);
+        height: 7px;
+        border-radius: 0px;
+        display: block;
+    }
+}
