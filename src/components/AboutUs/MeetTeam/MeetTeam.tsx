@@ -22,7 +22,7 @@ const MeetTeam = () => {
                 />
                 <PersonalCard
                     img={userImg01}
-                    job="Web Designer"
+                    job="Frontend Developer"
                     name="Ms. Veronica"
                     socialLinks={{
                         facebook: "https://www.facebook.com",
@@ -32,7 +32,7 @@ const MeetTeam = () => {
                 />
                 <PersonalCard
                     img={userImg01}
-                    job="Web Designer"
+                    job="Backend Developer"
                     name="Ms. Veronica"
                     socialLinks={{
                         facebook: "https://www.facebook.com",
@@ -41,7 +41,7 @@ const MeetTeam = () => {
                 />
                 <PersonalCard
                     img={userImg01}
-                    job="Web Designer"
+                    job="CEO"
                     name="Ms. Veronica"
                     socialLinks={{
                         facebook: "https://www.facebook.com",

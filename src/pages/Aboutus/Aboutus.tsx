@@ -1,6 +1,7 @@
 import AboutAlbum from "../../components/AboutUs/AboutAlbum/AboutAlbum"
 import FunctionalitySection from "../../components/AboutUs/FunctionalitySection/FunctionalitySection"
 import MeetTeam from "../../components/AboutUs/MeetTeam/MeetTeam"
+import Sponsors from "../../components/AboutUs/Sponsors/Sponsors"
 import WelcomeSection from "../../components/AboutUs/WelcomeSection/WelcomeSection"
 import PageHeader from "../../components/shared/PageHeader/PageHeader"
 
@@ -15,6 +16,7 @@ const Aboutus = () => {
       <FunctionalitySection  />
       <AboutAlbum />
       <MeetTeam />
+      <Sponsors />
 
 
     </div>
