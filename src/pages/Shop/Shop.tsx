@@ -1,18 +1,20 @@
 import { useEffect, useState } from "react";
 import PageHeader from "../../components/shared/PageHeader/PageHeader";
 import { useParams } from "react-router-dom";
-import { TProduct } from "../../types";
+import { TProduct, Tsort } from "../../types";
 import productsServices from "../../servcies/productsServices";
 import ProductCard from "../../components/shared/ProductCard/ProductCard";
 import ProductsLabel from "../../Data/ProductsLabel";
 import { IoIosArrowBack } from "react-icons/io";
 import Pagination from "react-js-pagination";
+import Sort from "../../components/Shop/Sort/Sort";
 
 const Shop = () => {
   const { categoryName } = useParams();
   const [products, setProducts] = useState<TProduct[]>([]);
   const [activePage, setActivePage] = useState(1);
   const [itemsCount, setItemsCount] = useState(0);
+  const [sortBy, setSortBy] = useState<Tsort>("newest");
 
   const getProducts = async () => {
     try {
@@ -28,6 +30,10 @@ const Shop = () => {
   const changeActivePage = (newPage: number)=> {
     setActivePage(newPage)
     document.getElementById("products-list")?.scrollIntoView({behavior: "smooth"})
+  }
+
+  const changeSortBy = (newSort: Tsort) => {
+    setSortBy(newSort);
   }
 
   useEffect(() => {
@@ -48,6 +54,14 @@ const Shop = () => {
 
           {/* Products Display */}
           <div className="col-span-3">
+            {/* Sort */}
+            <Sort
+              itemsCount={itemsCount}
+              sortBy={sortBy}
+              changeSortBy={changeSortBy}
+
+            />
+            {/* Products List */}
             <div className="grid grid-cols-3 gap-4" id="products-list">
               {products?.map((product) => (
                 <ProductCard
@@ -74,8 +88,8 @@ const Shop = () => {
               }
               totalItemsCount={itemsCount} //length
               pageRangeDisplayed={
-                Math.ceil(itemsCount / 8) > 4 ? 5 : Math.ceil(itemsCount / 8)
-              } // total tickets length / number of items per page to the nearist intiger
+                Math.ceil(itemsCount / 10) > 4 ? 5 : Math.ceil(itemsCount / 8)
+              } // total tickets length / number of items per page to the nearest integer
               onChange={(pageNumber: number) => changeActivePage(pageNumber)}
             />
           </div>

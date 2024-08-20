@@ -64,5 +64,13 @@
   "your-mail": "Your Mail",
   "furns-made-by": "Furns Made By",
   "ahmed-ismail": "Ahmed Ismail",
+  "sort-by": {
+    "sort-by": "Sort By",
+    "newest":"Newest",
+    "price-asc": "Price: Low to High",
+    "price-desc": "Price: High to Low",
+    "name-asc": "Name: A to Z",
+    "name-desc": "Name: Z to A"
+  },
   "": ""
 }
