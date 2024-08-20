@@ -78,7 +78,7 @@ const Shop = () => {
 
             <Pagination
               activePage={activePage}
-              itemsCountPerPage={8}
+              itemsCountPerPage={12}
               hideFirstLastPages={true}
               prevPageText={
                 <IoIosArrowBack className="w-6 h-3 rtl:rotate-180" />
@@ -88,7 +88,8 @@ const Shop = () => {
               }
               totalItemsCount={itemsCount} //length
               pageRangeDisplayed={
-                Math.ceil(itemsCount / 10) > 4 ? 5 : Math.ceil(itemsCount / 8)
+                // Math.ceil(itemsCount / 12) > 4 ? 5 : Math.ceil(itemsCount / 12)
+                5
               } // total tickets length / number of items per page to the nearest integer
               onChange={(pageNumber: number) => changeActivePage(pageNumber)}
             />
