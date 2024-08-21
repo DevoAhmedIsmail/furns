@@ -2,183 +2,204 @@
   "products": [
     {
       "id": "1dasd31r3",
-      "name": "Wooden decorations",
-      "price": 95.50,
-      "old-price": 38.00,
+      "name": "Handcrafted Concrete Gloves",
+      "price": 203.00,
+      "old-price": 926.00,
       "img": "/src/assets/images/products/product-1.webp",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo",
-      "discount": "7"
+      "description": "The Football Is Good For Training And Recreational Purposes",
+      "discount": "7",
+      "category": "Electronics"
     },
     {
       "id": "af3ff121",
-      "name": "High quality vase bottle",
-      "price": 28,
-      "old-price": 38.00,
+      "name": "Small Granite Keyboard",
+      "price": 508.00,
+      "old-price": 934.00,
       "img": "/src/assets/images/products/product-2.webp",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo",
-      "add_new": true
+      "description": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
+      "add_new": true,
+      "category": "Grocery"
     },
     {
       "id": "asf23g23g",
-      "name": "Living & Bedroom Chair",
-      "price": 178.58,
-      "old-price": 38.00,
+      "name": "Fantastic Plastic Salad",
+      "price": 808.00,
+      "old-price": 502.00,
       "img": "/src/assets/images/products/product-3.webp",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo",
-      "discount": "7"
+      "description": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
+      "discount": "7",
+      "category": "Industrial"
     },
     {
       "id": "g3gesf23g",
-      "name": "Living & Bedroom Table",
-      "price": 64.00,
-      "old-price": 38.00,
+      "name": "Rustic Granite Table",
+      "price": 108.00,
+      "old-price": 231.00,
       "img": "/src/assets/images/products/product-4.webp",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo",
+      "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
       "discount": "7",
-      "add_new": true
+      "add_new": true,
+      "category": "Grocery"
     },
     {
       "id": "dfu8392f",
-      "name": "Wooden decorations",
-      "price": 248.00,
-      "old-price": 38.00,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo",
-      "img": "/src/assets/images/products/product-5.webp"
+      "name": "Rustic Concrete Bike",
+      "price": 945.00,
+      "old-price": 822.00,
+      "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+      "img": "/src/assets/images/products/product-5.webp",
+      "category": "Automotive"
     },
     {
       "id": "g23gsdf23",
-      "name": "High quality vase bottle",
-      "price": 21.57,
-      "old-price": 38.00,
+      "name": "Rustic Plastic Chips",
+      "price": 567.00,
+      "old-price": 874.00,
       "img": "/src/assets/images/products/product-6.webp",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo",
-      "discount": "7"
+      "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+      "discount": "7",
+      "category": "Electronics"
     },
     {
       "id": "1fsdf32gf1",
-      "name": "Living & Bedroom Chair",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo",
-      "price": 157.54,
-      "old-price": 38.00,
+      "name": "Gorgeous Soft Computer",
+      "description": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+      "price": 956.00,
+      "old-price": 124.00,
       "img": "/src/assets/images/products/product-7.webp",
-      "add_new": true
+      "add_new": true,
+      "category": "Baby"
     },
     {
       "id": "foig821",
-      "name": "Wooden decorations",
-      "price": 17.20,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo",
-      "old-price": 38.00,
+      "name": "Licensed Frozen Cheese",
+      "price": 663.00,
+      "description": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
+      "old-price": 377.00,
       "img": "/src/assets/images/products/product-8.webp",
-      "add_new": true
+      "add_new": true,
+      "category": "Automotive"
     },
     {
       "id": "gtfsdf2312",
-      "name": "High quality vase bottle",
-      "price": 69.35,
-      "old-price": 38.00,
+      "name": "Unbranded Fresh Car",
+      "price": 583.00,
+      "old-price": 735.00,
       "img": "/src/assets/images/products/product-1.webp",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
-      "discount": "7"
+      "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+      "discount": "7",
+      "category": "Kids"
     },
     {
       "id": "hfc23d",
-      "name": "Living & Bedroom Chair",
-      "price": 97.02,
-      "old-price": 38.00,
+      "name": "Fantastic Cotton Car",
+      "price": 605.00,
+      "old-price": 937.00,
       "img": "/src/assets/images/products/product-2.webp",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
+      "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
       "discount": "7",
-      "add_new": true
+      "add_new": true,
+      "category": "Outdoors"
     },
     {
       "id": "cvxcvwer23",
-      "name": "Living & Bedroom Table",
-      "price": 80.32,
+      "name": "Tasty Soft Table",
+      "price": 482.00,
       "img": "/src/assets/images/products/product-3.webp",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque."
+      "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+      "category": "Shoes"
     },
     {
       "id": "gg2231",
-      "name": "Wooden decorations",
-      "price": 10.84,
+      "name": "Handmade Frozen Towels",
+      "price": 701.00,
       "img": "/src/assets/images/products/product-4.webp",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque."
+      "description": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
+      "category": "Music"
     },
     {
       "id": "llk1j23",
-      "name": "High quality vase bottle",
-      "price": 50.18,
-      "old-price": 38.00,
+      "name": "Intelligent Fresh Car",
+      "price": 656.00,
+      "old-price": 365.00,
       "img": "/src/assets/images/products/product-5.webp",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
-      "discount": "7"
+      "description": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
+      "discount": "7",
+      "category": "Baby"
     },
     {
       "id": "ggfdg43534",
-      "name": "Living & Bedroom Chair",
-      "price": 70.50,
-      "old-price": 38.00,
+      "name": "Refined Cotton Tuna",
+      "price": 752.00,
+      "old-price": 88.00,
       "img": "/src/assets/images/products/product-6.webp",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
+      "description": "The Football Is Good For Training And Recreational Purposes",
       "discount": "7",
-      "add_new": true
+      "add_new": true,
+      "category": "Grocery"
     },
     {
       "id": "ooiyt121",
-      "name": "Living & Bedroom Table",
-      "price": 14.85,
+      "name": "Unbranded Frozen Pants",
+      "price": 910.00,
       "img": "/src/assets/images/products/product-7.webp",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque."
+      "description": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
+      "category": "Kids"
     },
     {
       "id": "rweqr123",
-      "name": "Wooden decorations",
-      "price": 51.12,
+      "name": "Sleek Cotton Shirt",
+      "price": 134.00,
       "img": "/src/assets/images/products/product-8.webp",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque."
+      "description": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
+      "category": "Home"
     },
     {
       "id": "141tgds",
-      "name": "High quality vase bottle",
-      "price": 24.99,
-      "old-price": 38.00,
+      "name": "Incredible Wooden Bike",
+      "price": 675.00,
+      "old-price": 701.00,
       "img": "/src/assets/images/products/product-1.webp",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
-      "discount": "7"
+      "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+      "discount": "7",
+      "category": "Baby"
     },
     {
       "id": "5231fsd",
-      "name": "Living & Bedroom Chair",
-      "price": 124.52,
-      "old-price": 38.00,
+      "name": "Fantastic Steel Tuna",
+      "price": 244.00,
+      "old-price": 905.00,
       "img": "/src/assets/images/products/product-2.webp",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
+      "description": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
       "discount": "7",
-      "add_new": true
+      "add_new": true,
+      "category": "Electronics"
     },
     {
       "id": "1das231",
-      "name": "Living & Bedroom Table",
-      "price": 127.50,
+      "name": "Ergonomic Rubber Ball",
+      "price": 481.00,
       "img": "/src/assets/images/products/product-3.webp",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque."
+      "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+      "category": "Outdoors"
     },
     {
       "id": "51rfdsf",
-      "name": "Wooden decorations",
-      "price": 58.21,
+      "name": "Incredible Metal Ball",
+      "price": 96.00,
       "img": "/src/assets/images/products/product-4.webp",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque."
+      "description": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
+      "category": "Beauty"
     },
     {
       "id": "523fef1",
-      "name": "High quality vase bottle",
-      "price": 50.54,
-      "old-price": 38.00,
+      "name": "Incredible Rubber Chicken",
+      "price": 552.00,
+      "old-price": 551.00,
       "img": "/src/assets/images/products/product-5.webp",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
-      "discount": "7"
+      "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+      "discount": "7",
+      "category": "Kids"
     }
   ]
 }

@@ -6,7 +6,8 @@ type TProduct = {
     img: string
     description: string
     discount?: string,
-    add_new?: string
+    add_new?: string,
+    category?: string
 }
 
 export default TProduct;

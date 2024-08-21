@@ -4,7 +4,7 @@ import ProductsLabel from "../../../Data/ProductsLabel";
 import ProductIcon from "./ProductIcon";
 import { Button } from "../../ui/button";
 
-import "./ProductCard.scss"
+import "./ProductCard.scss";
 import { t } from "i18next";
 
 type IProductCardProps = {
@@ -14,6 +14,7 @@ type IProductCardProps = {
   title: string;
   discount?: number | string;
   productLabel: string;
+  category?: string;
 };
 const ProductCard = ({
   img,
@@ -22,6 +23,7 @@ const ProductCard = ({
   discount,
   oldPrice,
   productLabel,
+  category,
 }: IProductCardProps) => {
   return (
     <Link to={`/product`} className="relative w-full product-card">
@@ -37,16 +39,19 @@ const ProductCard = ({
 
         {/* icons */}
         <div className="absolute right-4 top-4">
-          <ProductIcon favouriteIcon  />
+          <ProductIcon favouriteIcon />
         </div>
 
         {/* Add To Cart */}
         <div className="absolute hidden w-full px-5 add-cart-btn bottom-5 flex-center">
-          <Button className="w-full text-black bg-white hover:text-mainColor hover:bg-white">{t("add-to-cart")}</Button>
+          <Button className="w-full text-black bg-white hover:text-mainColor hover:bg-white">
+            {t("add-to-cart")}
+          </Button>
         </div>
       </div>
 
       <div className="mt-3 text-center">
+        {category && <p className="p-regular-16 text-slate-400">{category}</p>}
         <p className="p-regular-20">{title}</p>
         <p className="gap-1 flex-center p-regular-18">
           <span>${price}</span>

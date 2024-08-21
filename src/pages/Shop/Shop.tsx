@@ -82,6 +82,7 @@ const Shop = () => {
                   title={product.name}
                   productLabel={product.add_new ?? ProductsLabel.newArrival.key}
                   discount={product.discount}
+                  category={product.category}
                 />
               ))}
             </div>
