@@ -17,36 +17,42 @@ type SortProps = {
 };
 
 const Sort = ({ itemsCount, sortBy, changeSortBy }: SortProps) => {
-    const sortDataMenu: Tsort[]= ["newest", "price-asc", "price-desc", "name-asc", "name-desc"]
+  const sortDataMenu: Tsort[] = [
+    "newest",
+    "price-asc",
+    "price-desc",
+    "name-asc",
+    "name-desc",
+  ];
 
   return (
     <div className="bg-[#ebebeb] py-3 px-6 mb-8">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col items-center justify-between gap-4 sm:flex-row ">
         <p className="p-regular-14">There Are {itemsCount} Products.</p>
 
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-3">
           {t("sort-by.sort-by")}:
-          <DropdownMenu
-          dir={t("lang") === "ar" ? "rtl" : "ltr"}
-          >
+          <DropdownMenu dir={t("lang") === "ar" ? "rtl" : "ltr"}>
             <DropdownMenuTrigger>
-              <div className="min-w-[200px] text-start flex items-center justify-between">
+              <div className="flex-1 gap-4  min-w-full sm:min-w-[200px] text-start flex items-center justify-between">
                 {t(`sort-by.${sortBy}`)}
                 <IoIosArrowDown />
               </div>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
-                {
-                    sortDataMenu.map((item) => (
-                        <DropdownMenuItem
-                            key={item}
-                            onClick={() => changeSortBy(item)}
-                            className={sortBy === item ? "bg-[var(--main-color)] text-white hover:bg-[var(--main-color)]" : "cursor-pointer"}
-                        >
-                            {t(`sort-by.${item}`)}
-                        </DropdownMenuItem>
-                    ))
-                }
+              {sortDataMenu.map((item) => (
+                <DropdownMenuItem
+                  key={item}
+                  onClick={() => changeSortBy(item)}
+                  className={
+                    sortBy === item
+                      ? "bg-[var(--main-color)] text-white hover:bg-[var(--main-color)]"
+                      : "cursor-pointer"
+                  }
+                >
+                  {t(`sort-by.${item}`)}
+                </DropdownMenuItem>
+              ))}
             </DropdownMenuContent>
           </DropdownMenu>
         </div>

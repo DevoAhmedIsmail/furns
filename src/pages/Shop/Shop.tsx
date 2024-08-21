@@ -17,8 +17,18 @@ const Shop = () => {
   const [sortBy, setSortBy] = useState<Tsort>("newest");
 
   const getProducts = async () => {
+    const sortType = {
+        newest: "_sort=-createdDate",
+        "price-asc": "_sort=price",
+        "price-desc": "_sort=-price",
+        "name-asc": "_sort=name",
+        "name-desc": "_sort=-name",
+      }
+    
     try {
-      const productsData = await productsServices.getProducts(activePage);
+      // _sort=createdDate&_order=desc
+      // _sort=price
+      const productsData = await productsServices.getProducts(activePage,sortType[sortBy]);
       console.log(productsData.data);
       setProducts(productsData.data.data);
       setItemsCount(productsData.data.items);
@@ -38,7 +48,7 @@ const Shop = () => {
 
   useEffect(() => {
     getProducts();
-  }, [activePage]);
+  }, [activePage, sortBy]);
 
   return (
     <div className="">
@@ -50,10 +60,10 @@ const Shop = () => {
       <section className="wrapper">
         <div className="grid grid-cols-4">
           {/* Filters */}
-          <div className="col-span-1"></div>
+          <div className="col-span-4 lg:col-span-1"></div>
 
           {/* Products Display */}
-          <div className="col-span-3">
+          <div className="col-span-4 lg:col-span-3">
             {/* Sort */}
             <Sort
               itemsCount={itemsCount}
@@ -62,7 +72,7 @@ const Shop = () => {
 
             />
             {/* Products List */}
-            <div className="grid grid-cols-3 gap-4" id="products-list">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3" id="products-list">
               {products?.map((product) => (
                 <ProductCard
                   key={product.id}

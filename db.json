@@ -3,7 +3,7 @@
     {
       "id": "1dasd31r3",
       "name": "Wooden decorations",
-      "price": 30.50,
+      "price": 95.50,
       "old-price": 38.00,
       "img": "/src/assets/images/products/product-1.webp",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo",
@@ -12,7 +12,7 @@
     {
       "id": "af3ff121",
       "name": "High quality vase bottle",
-      "price": 30.50,
+      "price": 28,
       "old-price": 38.00,
       "img": "/src/assets/images/products/product-2.webp",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo",
@@ -21,7 +21,7 @@
     {
       "id": "asf23g23g",
       "name": "Living & Bedroom Chair",
-      "price": 30.50,
+      "price": 178.58,
       "old-price": 38.00,
       "img": "/src/assets/images/products/product-3.webp",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo",
@@ -30,7 +30,7 @@
     {
       "id": "g3gesf23g",
       "name": "Living & Bedroom Table",
-      "price": 30.50,
+      "price": 64.00,
       "old-price": 38.00,
       "img": "/src/assets/images/products/product-4.webp",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo",
@@ -40,7 +40,7 @@
     {
       "id": "dfu8392f",
       "name": "Wooden decorations",
-      "price": 30.50,
+      "price": 248.00,
       "old-price": 38.00,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo",
       "img": "/src/assets/images/products/product-5.webp"
@@ -48,7 +48,7 @@
     {
       "id": "g23gsdf23",
       "name": "High quality vase bottle",
-      "price": 30.50,
+      "price": 21.57,
       "old-price": 38.00,
       "img": "/src/assets/images/products/product-6.webp",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo",
@@ -58,7 +58,7 @@
       "id": "1fsdf32gf1",
       "name": "Living & Bedroom Chair",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo",
-      "price": 30.50,
+      "price": 157.54,
       "old-price": 38.00,
       "img": "/src/assets/images/products/product-7.webp",
       "add_new": true
@@ -66,7 +66,7 @@
     {
       "id": "foig821",
       "name": "Wooden decorations",
-      "price": 30.50,
+      "price": 17.20,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo",
       "old-price": 38.00,
       "img": "/src/assets/images/products/product-8.webp",
@@ -75,7 +75,7 @@
     {
       "id": "gtfsdf2312",
       "name": "High quality vase bottle",
-      "price": 30.50,
+      "price": 69.35,
       "old-price": 38.00,
       "img": "/src/assets/images/products/product-1.webp",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
@@ -84,7 +84,7 @@
     {
       "id": "hfc23d",
       "name": "Living & Bedroom Chair",
-      "price": 30.50,
+      "price": 97.02,
       "old-price": 38.00,
       "img": "/src/assets/images/products/product-2.webp",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
@@ -94,21 +94,21 @@
     {
       "id": "cvxcvwer23",
       "name": "Living & Bedroom Table",
-      "price": 30.50,
+      "price": 80.32,
       "img": "/src/assets/images/products/product-3.webp",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque."
     },
     {
       "id": "gg2231",
       "name": "Wooden decorations",
-      "price": 30.50,
+      "price": 10.84,
       "img": "/src/assets/images/products/product-4.webp",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque."
     },
     {
       "id": "llk1j23",
       "name": "High quality vase bottle",
-      "price": 30.50,
+      "price": 50.18,
       "old-price": 38.00,
       "img": "/src/assets/images/products/product-5.webp",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
@@ -117,7 +117,7 @@
     {
       "id": "ggfdg43534",
       "name": "Living & Bedroom Chair",
-      "price": 30.50,
+      "price": 70.50,
       "old-price": 38.00,
       "img": "/src/assets/images/products/product-6.webp",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
@@ -127,21 +127,21 @@
     {
       "id": "ooiyt121",
       "name": "Living & Bedroom Table",
-      "price": 30.50,
+      "price": 14.85,
       "img": "/src/assets/images/products/product-7.webp",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque."
     },
     {
       "id": "rweqr123",
       "name": "Wooden decorations",
-      "price": 30.50,
+      "price": 51.12,
       "img": "/src/assets/images/products/product-8.webp",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque."
     },
     {
       "id": "141tgds",
       "name": "High quality vase bottle",
-      "price": 30.50,
+      "price": 24.99,
       "old-price": 38.00,
       "img": "/src/assets/images/products/product-1.webp",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
@@ -150,7 +150,7 @@
     {
       "id": "5231fsd",
       "name": "Living & Bedroom Chair",
-      "price": 30.50,
+      "price": 124.52,
       "old-price": 38.00,
       "img": "/src/assets/images/products/product-2.webp",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
@@ -160,21 +160,21 @@
     {
       "id": "1das231",
       "name": "Living & Bedroom Table",
-      "price": 30.50,
+      "price": 127.50,
       "img": "/src/assets/images/products/product-3.webp",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque."
     },
     {
       "id": "51rfdsf",
       "name": "Wooden decorations",
-      "price": 30.50,
+      "price": 58.21,
       "img": "/src/assets/images/products/product-4.webp",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque."
     },
     {
       "id": "523fef1",
       "name": "High quality vase bottle",
-      "price": 30.50,
+      "price": 50.54,
       "old-price": 38.00,
       "img": "/src/assets/images/products/product-5.webp",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
