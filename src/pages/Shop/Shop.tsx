@@ -1,13 +1,17 @@
 import { useEffect, useState } from "react";
 import PageHeader from "../../components/shared/PageHeader/PageHeader";
 import { useParams } from "react-router-dom";
-import { TProduct, Tsort } from "../../types";
+import { TAppliedFilters, TFilterItem, TProduct, Tsort } from "../../types";
 import productsServices from "../../servcies/productsServices";
 import ProductCard from "../../components/shared/ProductCard/ProductCard";
 import ProductsLabel from "../../Data/ProductsLabel";
 import { IoIosArrowBack } from "react-icons/io";
 import Pagination from "react-js-pagination";
 import Sort from "../../components/Shop/Sort/Sort";
+import Filters from "../../components/Shop/Filters/Filters";
+import changeState from "../../helpers/changeStateOfFilter";
+
+
 
 const Shop = () => {
   const { categoryName } = useParams();
@@ -15,20 +19,56 @@ const Shop = () => {
   const [activePage, setActivePage] = useState(1);
   const [itemsCount, setItemsCount] = useState(0);
   const [sortBy, setSortBy] = useState<Tsort>("newest");
+  const [appliedFilters, setAppliedFilters] = useState<TAppliedFilters>({});
+
+  
+
+  const allFilters: TFilterItem[] = [
+    {
+      title: "category",
+      displayedData: ["All", "Shoes", "Clothes", "Accessories"],
+      state: appliedFilters?.category,
+      changeState: (category: string) => setAppliedFilters(prev => ({...prev, category})),
+    },
+    {
+      title: "brand",
+      displayedData: ["Nike", "Adidas", "Puma", "Reebok"],
+      state: appliedFilters?.brand,
+      changeState: (brand: string) => changeState("brand", brand, setAppliedFilters),
+      isMultiSelect: true,
+    },
+    {
+      title: "color",
+      displayedData: ["Black", "White", "Red", "Blue"],
+      state: appliedFilters?.color,
+      changeState: (color: string) => changeState("color", color, setAppliedFilters),
+      isMultiSelect: true,
+    },
+    {
+      title: "size",
+      displayedData: ["S", "M", "L", "XL"],
+      state: appliedFilters?.size,
+      changeState: (size: string) => changeState("size", size, setAppliedFilters),
+      isMultiSelect: true,
+    },
+  ];
+
+  const sortType = {
+    newest: "_sort=-createdDate",
+    "price-asc": "_sort=price",
+    "price-desc": "_sort=-price",
+    "name-asc": "_sort=name",
+    "name-desc": "_sort=-name",
+  };
 
   const getProducts = async () => {
-    const sortType = {
-        newest: "_sort=-createdDate",
-        "price-asc": "_sort=price",
-        "price-desc": "_sort=-price",
-        "name-asc": "_sort=name",
-        "name-desc": "_sort=-name",
-      }
-    
     try {
       // _sort=createdDate&_order=desc
       // _sort=price
-      const productsData = await productsServices.getProducts(activePage,sortType[sortBy]);
+      const productsData = await productsServices.getProducts(
+        activePage,
+        sortType[sortBy]
+      );
       console.log(productsData.data);
       setProducts(productsData.data.data);
       setItemsCount(productsData.data.items);
@@ -37,14 +77,16 @@ const Shop = () => {
     }
   };
 
-  const changeActivePage = (newPage: number)=> {
-    setActivePage(newPage)
-    document.getElementById("products-list")?.scrollIntoView({behavior: "smooth"})
-  }
+  const changeActivePage = (newPage: number) => {
+    setActivePage(newPage);
+    document
+      .getElementById("products-list")
+      ?.scrollIntoView({ behavior: "smooth" });
+  };
 
   const changeSortBy = (newSort: Tsort) => {
     setSortBy(newSort);
-  }
+  };
 
   useEffect(() => {
     getProducts();
@@ -58,9 +100,11 @@ const Shop = () => {
       />
 
       <section className="wrapper">
-        <div className="grid grid-cols-4">
+        <div className="grid grid-cols-4 gap-8">
           {/* Filters */}
-          <div className="col-span-4 lg:col-span-1"></div>
+          <div className="col-span-4 lg:col-span-1">
+            <Filters allFilters={allFilters} />
+          </div>
 
           {/* Products Display */}
           <div className="col-span-4 lg:col-span-3">
@@ -69,10 +113,12 @@ const Shop = () => {
               itemsCount={itemsCount}
               sortBy={sortBy}
               changeSortBy={changeSortBy}
-
             />
             {/* Products List */}
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3" id="products-list">
+            <div
+              className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3"
+              id="products-list"
+            >
               {products?.map((product) => (
                 <ProductCard
                   key={product.id}

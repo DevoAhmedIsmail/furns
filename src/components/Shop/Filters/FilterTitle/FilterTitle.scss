@@ -1,0 +1,9 @@
+.filter__title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 60px;
+    height: 2px;
+    background: #ff7004;
+}
